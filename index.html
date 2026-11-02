@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Summit Roofing demo website featuring roofing services, projects and quote requests.">
+  <title>Summit Roofing | Built to Protect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        SUMMIT<span>ROOFING.</span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-label="Toggle menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Our Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-button">Get a Free Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">ROOFING DONE RIGHT</p>
+        <h1>BUILT TO PROTECT.<br>
+          <span>MADE TO LAST.</span>
+        </h1>
+        <p class="hero-description">
+          From roof repairs to complete replacements,
+          we help homeowners protect what matters most.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="button primary">
+            GET A FREE ESTIMATE
+          </a>
+          <a href="#services" class="button outline">
+            EXPLORE SERVICES
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="container">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2>ROOFING SERVICES<br>YOU CAN COUNT ON.</h2>
+        <p class="section-intro">
+          Practical roofing solutions for residential properties.
+        </p>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="card-number">01</span>
+            <h3>Roof Replacement</h3>
+            <p>
+              Complete roof replacement solutions designed
+              for durability and long-term protection.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="card-number">02</span>
+            <h3>Roof Repairs</h3>
+            <p>
+              Solutions for damaged shingles, leaks,
+              and everyday roofing problems.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span class="card-number">03</span>
+            <h3>Roof Inspections</h3>
+            <p>
+              Thorough roof assessments to help homeowners
+              understand their roof's condition.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about-layout">
+        <div>
+          <p class="eyebrow">WHY CHOOSE SUMMIT</p>
+          <h2>QUALITY WORK.<br>NO SHORTCUTS.</h2>
+        </div>
+
+        <div class="about-content">
+          <p>
+            Your roof is one of the most important parts
+            of your home. Our approach focuses on clear
+            communication, careful workmanship and
+            practical solutions.
+          </p>
+          <ul>
+            <li>Clear project communication</li>
+            <li>Attention to detail</li>
+            <li>Residential roofing solutions</li>
+            <li>Simple quote request process</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <p class="eyebrow">OUR WORK</p>
+        <h2>BUILT FOR EVERY SEASON.</h2>
+        <p class="section-intro">
+          Example project categories for this demonstration website.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image project-one"></div>
+            <div class="project-details">
+              <h3>Residential Roof Replacement</h3>
+              <p>DEMO PROJECT CONCEPT</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-two"></div>
+            <div class="project-details">
+              <h3>Shingle Roofing Upgrade</h3>
+              <p>DEMO PROJECT CONCEPT</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow">LET'S GET STARTED</p>
+          <h2>YOUR NEXT ROOF<br>STARTS HERE.</h2>
+          <p>
+            Tell us about your roofing project and
+            request an estimate.
+          </p>
+        </div>
+
+        
+<form class="contact-form" id="quote-form" onsubmit="event.preventDefault(); alert('This is a demo form. No information was sent.');">
+
+          <label for="customer-name">Full Name</label>
+          <input id="customer-name" name="name"
+            type="text" placeholder="Your name" required>
+
+          <label for="customer-email">Email Address</label>
+          <input id="customer-email" name="email"
+            type="email" placeholder="Your email" required>
+
+          <label for="customer-phone">Phone Number</label>
+          <input id="customer-phone" name="phone"
+            type="tel" placeholder="Your phone number" required>
+
+          <label for="customer-service">Service Needed</label>
+          <select id="customer-service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Roof Replacement</option>
+            <option>Roof Repair</option>
+            <option>Roof Inspection</option>
+            <option>Other</option>
+          </select>
+
+          <label for="customer-message">Project Details</label>
+          <textarea id="customer-message" name="message"
+            rows="4" placeholder="Tell us about your project"></textarea>
+
+          <button type="submit" class="button primary">
+            REQUEST MY FREE ESTIMATE
+          </button>
+
+          <p class="form-note">
+            Demonstration form only — submissions are not
+            being collected yet.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">
+        SUMMIT<span>ROOFING.</span>
+      </a>
+      <p>Website concept by NorthPeak Digital.</p>
+      <p>© 2026 Summit Roofing | Portfolio Concept</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
